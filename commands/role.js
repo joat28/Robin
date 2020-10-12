@@ -7,4 +7,4 @@ module.exports = {
     execute (message, args){
         return message.reply(`You wanted to assign ${args[0]} a role of ${args[1]}! `);
     }
-}
+} 

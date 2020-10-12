@@ -3,6 +3,7 @@ module.exports ={
     name : "prune",
     description : "this is used to delete or prune messages from 2 to 100",
     args: true,
+    aliases: [ "delmsg"],
     execute(message, args){
     const pruneNumber = parseInt(args[0])
     if(isNaN(pruneNumber)){
