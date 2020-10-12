@@ -1,2 +1,2 @@
-#Simposter
-A discord Bot for fun
+#Robin
+This is a discord bot for exploring Discord.js.

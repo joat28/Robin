@@ -3,7 +3,6 @@ const Discord = require('discord.js');
 const {prefix, token} =  require('./config.json');
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
-client.cooldowns = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 const cooldownMessage = new Set();
@@ -13,7 +12,6 @@ const cooldownMessage = new Set();
 for(const file of commandFiles){
     const command = require(`./commands/${file}`)
     client.commands.set(command.name, command);
-    client.cooldowns.set(command.name,command.cooldown)
 }
 
 client.once('ready', ()=>{
