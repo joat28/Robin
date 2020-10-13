@@ -4,6 +4,7 @@ module.exports = {
     description : "this command is used to kick players",
     args: true,
     guildOnly: true,
+    usage: "kick <MENTION USER TO KICK> ",
     aliases: ["remove"],
     execute(message, args){
         if (!message.mentions.users.size) {

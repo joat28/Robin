@@ -20,6 +20,8 @@ client.once('ready', ()=>{
 
 
 client.on('message', message =>{ 
+
+   
     if(!message.content.startsWith(`${prefix}`) || message.author.bot) return;
     
     else{
@@ -34,6 +36,7 @@ client.on('message', message =>{
         if(command.guildOnly && message.channel.type == 'dm'){
             return message.reply("Oops!, This command can not be used in DMs.")
         }
+        
         if(command.args && !args.length){
            
             let reply = "You did not provide any arguments"
@@ -58,8 +61,9 @@ client.on('message', message =>{
                 },1500)
             }
         }
-        catch{
-            message.reply("There was an error trying to execute the command!");
+        catch(error) {
+            message.reply("There was an error trying to execute the command!, ask moderator to correct Code/Server issues!");
+            console.log("ERROR: ", error)
         }
       
     }

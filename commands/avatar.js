@@ -3,6 +3,7 @@ module.exports = {
     name : "avatar",
     description : "this command is used to give a link to users/mentions profile",
     aliases : ["icon", "pfp"],
+    usage: "avatar <MENTION USER TO VIEW AVATAR FOR (OPTIONAL)>",
     execute(message, args){
         if (!message.mentions.users.size) {
             message.reply(`Your Avatar URL: <${message.author.displayAvatarURL({ format: "png", dynamic: true })}>`);
