@@ -24,7 +24,7 @@ module.exports = {
         else{
 
                
-                const commandHelpAsked = commands.find(cmd => cmd.name == args[0]);
+                const commandHelpAsked = commands.find(cmd => cmd.name == args[0]||(cmd.aliases && cmd.aliases.includes(args[0])));
                 if(!commandHelpAsked){
                     message.reply("No such Command found! Please check.");
                     return;
