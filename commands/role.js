@@ -3,7 +3,7 @@ module.exports = {
     description : "this is used to give role",
     args: true,
     guildOnly: true,
-    usage : "<USER> <ROlE TO GIVE>",
+    usage : "<user> <role_to_give>",
     execute (message, args){
         return message.reply(`You wanted to assign ${args[0]} a role of ${args[1]}! `);
     }
