@@ -2,14 +2,13 @@ module.exports ={
     name: "invite",
     description: "this command is used to invite channel users for an event. using DMs/ channel messages",
     args: true,
-    usage : "<event_name> <mentions_for_invite (optional)>",
+    usage : "Basic invite : Event_Name   Mentions_For_Invite(optional) \nForce Invite : Event_Name force/f/u   Mentions_For_Invite(optional)",
+    aliases:["inv", "i"],
+    guildOnly: true,
     execute: function(message,args) {
 
         const inviteMembers = [];
         const dateObj = new Date();
-
-    
-        
         let counter = 0;
         args.forEach(user => {
             if(counter == 1){
