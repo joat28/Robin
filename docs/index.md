@@ -10,5 +10,5 @@ This is a Discord bot, built with DiscordJS. use it for moderation and having fu
 5. Add bot from the link given below.
 6. The bot is not hosted yet and may not be available all the time.
 
-[https://discord.com/oauth2/authorize?client_id=762950679614324736&scope=bot](url)
+[Add Bot](https://discord.com/oauth2/authorize?client_id=762950679614324736&scope=bot)
 
