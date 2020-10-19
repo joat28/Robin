@@ -1,5 +1,5 @@
 {
-  "name": "simposter",
+  "name": "robin",
   "version": "1.0.0",
   "description": "A discord bot for personal use",
   "main": "index.js",
@@ -9,6 +9,8 @@
   "author": "Prabhat Rao",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.3.1"
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5"
   }
 }

@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&display=swap');
+
+.main{
+    margin:auto;
+    text-align:center;
+}
+h1{
+    font-family: 'Assistant', sans-serif;
+}
