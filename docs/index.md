@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+## RobRobin
 
-You can use the [editor on GitHub](https://github.com/joat28/Robin/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+This is a Discord bot, built with DiscordJS. use it for moderation and having fun in servers.
+### Things to consider. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+1. Please do not exploit any loopholes in the code.
+2. Report if you find any corner cases.
+3. You can also give suggestions for adding extra features by contributing.
+4. Some features might need  **admin** privilegdes.
+5. Add bot from the link given below.
+6. The bot is not hosted yet and may not be available all the time.
 
-### Markdown
+[https://discord.com/oauth2/authorize?client_id=762950679614324736&scope=bot](url)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/joat28/Robin/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
