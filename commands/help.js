@@ -41,9 +41,9 @@ module.exports = {
                 color : 0x7ae5f5,
                 title : 'HELP',
                 description : `A list of all commands!, To know about a command , use ${prefix}help command_name :)`,
-                thumbnail : {
-                    url : 'https://www.nicepng.com/png/detail/88-889014_robin-teen-titans-go-robin-png.png'
-                },
+                // thumbnail : {
+                //     url : 'https://www.nicepng.com/png/detail/88-889014_robin-teen-titans-go-robin-png.png'
+                // },
                 fields: listOfCommands,
                 timestamp : new Date(),
                 footer: {
@@ -72,9 +72,9 @@ module.exports = {
                     title : `HELP  : ${commandHelpAsked.name.toUpperCase()}`,
                     url : "",
                     description : `Here are the details of the command ${commandHelpAsked.name}. :)`,
-                    thumbnail : {
-                        url : 'https://www.nicepng.com/png/detail/88-889014_robin-teen-titans-go-robin-png.png'
-                    },
+                    // thumbnail : {
+                    //     url : 'https://www.nicepng.com/png/detail/88-889014_robin-teen-titans-go-robin-png.png'
+                    // },
                     fields : [
                         { 
                             name: '\u200B',
