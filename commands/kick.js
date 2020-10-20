@@ -1,10 +1,11 @@
+const {prefix} =  require('./config.json');
 module.exports = {
     
     name : "kick",
     description : "this command is used to kick players",
     args: true,
     guildOnly: true,
-    usage: "kick <mention user to kick> ",
+    usage: `${prefix}kick <mention user to kick>`,
     aliases: ["remove"],
     execute(message, args){
         if (!message.mentions.users.size) {

@@ -1,8 +1,9 @@
+const {prefix} =  require('./config.json');
 module.exports ={
     name: "invite",
     description: "this command is used to invite channel users for an event. using DMs/ channel messages",
     args: true,
-    usage : "Basic invite : Event_Name   Mentions_For_Invite(optional) \nForce Invite : Event_Name force/f/u   Mentions_For_Invite(optional)",
+    usage : `Basic invite : ${prefix}invite Event_Name   Mentions_For_Invite(optional) \nForce Invite : ${prefix}invite Event_Name force/f/u   Mentions_For_Invite(optional)`,
     aliases:["inv", "i"],
     guildOnly: true,
     execute: function(message,args) {

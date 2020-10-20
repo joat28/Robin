@@ -6,7 +6,7 @@ module.exports = {
     name: "help",
     description: "this is used to list all possible commands",
     aliases: [ "h","commands"],
-    usage : "h or help or help <command_name>",
+    usage : ` All Help : ${prefix}h or ${prefix}help /n CMD Help: ${prefix}help <command_name>`,
     guildOnly:false,
     args : false,
     execute(message, args){
