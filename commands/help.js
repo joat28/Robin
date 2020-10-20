@@ -9,7 +9,7 @@ module.exports = {
     usage : ` All Help : ${prefix}h or ${prefix}help /n CMD Help: ${prefix}help <command_name>`,
     guildOnly:false,
     args : false,
-    execute(message, args){
+    execute(message, args, client){
         // message.reply(" Here are some commands to get you started, ( prefix : .. )"); 
         let data = [];
         const {commands} = message.client;

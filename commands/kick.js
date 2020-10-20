@@ -1,4 +1,4 @@
-const {prefix} =  require('./config.json');
+const {prefix} = require('../config.json');
 module.exports = {
     
     name : "kick",
@@ -7,7 +7,7 @@ module.exports = {
     guildOnly: true,
     usage: `${prefix}kick <mention user to kick>`,
     aliases: ["remove"],
-    execute(message, args){
+    execute(message, args,client){
         if (!message.mentions.users.size) {
             message.reply('You need to tag a person to Kick them!');
         }

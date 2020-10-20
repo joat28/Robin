@@ -43,7 +43,7 @@ client.on('message', message =>{
            
             let reply = "You did not provide any arguments"
             if(command.usage){
-                reply += `, Proper use would be : ${prefix}${commandName} ${command.usage}`
+                reply += `, Proper use would be : ${command.usage}`
             }
             return message.reply(reply);
 
@@ -54,7 +54,7 @@ client.on('message', message =>{
                 message.reply("You need to wait for 1.5 sec before the last command executes!")
             }
             else{
-                command.execute(message, args);
+                command.execute(message, args,client);
                 // Add user to the recentMessage members list
                 cooldownMessage.add(message.author.id)
                 // Remove user after 1.5 sec

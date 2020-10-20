@@ -1,4 +1,5 @@
-const {prefix} =  require('./config.json');
+const {prefix} = require('../config.json');
+
 module.exports ={
     
     name : "prune",
@@ -7,7 +8,7 @@ module.exports ={
     aliases: [ "delmsg"],
     usage: `${prefix}prune <No_Of_Messages>`,
     guildOnly:false,
-    execute(message, args){
+    execute(message, args, client){
     const pruneNumber = parseInt(args[0])
     if(isNaN(pruneNumber)){
         message.reply("You need to provide a valid number!")

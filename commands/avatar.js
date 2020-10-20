@@ -1,4 +1,5 @@
-const {prefix} =  require('./config.json');
+const {prefix} = require('../config.json');
+
 module.exports = {
     
     name : "avatar",
@@ -7,7 +8,7 @@ module.exports = {
     guildOnly:false,
     args: false,
     usage: `${prefix}avatar <user (optinal)>`,
-    execute(message, args){
+    execute(message, args,client){
         if (!message.mentions.users.size) {
             message.reply(`Your Avatar URL: <${message.author.displayAvatarURL({ format: "png", dynamic: true })}>`);
         }
