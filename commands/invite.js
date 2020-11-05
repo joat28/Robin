@@ -39,9 +39,9 @@ module.exports ={
                 name: "Invitees :",
                 value: `${inviteMembers}`
             },
-            {   
-                name: "Time of Event :",
-                value: `Now (${dateObj.toTimeString()}), invite expires in 1 hr`
+            {
+                name:"Date and Time of Event :",
+                value: `${dateObj.toLocaleString()}`,
             },
             {   
                 name: "Organiser :",
@@ -70,10 +70,34 @@ module.exports ={
 
             message.channel.send({embed: inviteMessage}).
             then(msg =>{
-            // 
-            //inviteMessage.title = `${args[0].toUpperCase()} URGENT INVITE`; 
+            const inviteMessage = {
+                color: 0xfffff,
+                title: `${title}`,
+                description: `${message.author.username} wants to invite for ${args[0].toUpperCase()} (${message.guild.name})`,
+                fields: [
+                { 
+                        name: '\u200B',
+                        value: '\u200B' 
+                },
+                {   
+                    name: "Organiser :",
+                    value: `${message.author.username}`
+                },
+                {
+                    name:"Date and Time :",
+                    value: `${dateObj.toLocaleString()}`,
+                },
+                { 
+                    name: '\u200B',
+                    value: '\u200B' 
+                },
+                ],
+                timestamp : new Date(),
+                footer:{
+                    text: "Developed by Prabhat"
+                }
+            } 
             message.mentions.users.map(user => user.send({embed:inviteMessage}));
-            //console.log(message.mentions);
             })
             .catch(error => {
             message.channel.send("Some error occured! in invite");

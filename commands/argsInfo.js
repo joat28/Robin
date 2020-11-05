@@ -4,7 +4,7 @@ module.exports ={
     name: "args-info",
     description: "this is used as a test command for information about an arg and command",
     args: true,
-    aliases: [],
+    aliases: ['ai'],
     guildOnly:false,
     usage: `${prefix}args-info <arguements>` ,
     aliases: ["cmd-info"],
