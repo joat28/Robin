@@ -9,5 +9,4 @@ module.exports = {
     execute(message, args,client){
       message.channel.send("Pinging....").then((msg)=>{msg.edit(`Ponged In: ${Math.round(client.ws.ping)}ms`)})
     }
-
 }
