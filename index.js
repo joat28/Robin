@@ -30,12 +30,6 @@ client.on('message', message =>{
         const args = message.content.slice(prefix.length).trim().split(/ +/);
         const commandName = args.shift().toLowerCase(); 
         const command = client.commands.get(commandName) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
-<<<<<<< HEAD
-=======
-        // console.log("commandName : " + commandName);
-        // console.log(" get(commandName): " + client.commands.get(commandName))
-        // console.log("includes(commandName) " + client.commands.find(cmd => {cmd.aliases && cmd.aliases.includes(commandName)}));  
->>>>>>> dfd46fa664e063a3e344456936f7d71eaaa6f56e
 
         if(!command) return;
         if(command.guildOnly && message.channel.type == 'dm'){
